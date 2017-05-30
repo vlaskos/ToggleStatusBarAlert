@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="statusBarAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb8-5P-vOo">
+                                <rect key="frame" x="137" y="313" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.08235294118" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="c0o-o2-Wzp"/>
+                                    <constraint firstAttribute="width" constant="100" id="mkV-D8-Gsp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.8980392157" green="0.08235294118" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PRESS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKl-RA-uPS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.71372549019999998" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mb8-5P-vOo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Id-bM-28d"/>
+                            <constraint firstItem="mb8-5P-vOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvn-Ih-v75"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pressButton" destination="mb8-5P-vOo" id="bDg-7h-Sn4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Secont View Controller-->
+        <scene sceneID="eLz-ee-WfV">
+            <objects>
+                <viewController storyboardIdentifier="SecontViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tZS-JG-0ul" customClass="SecontViewController" customModule="statusBarAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rqH-fd-dCH"/>
+                        <viewControllerLayoutGuide type="bottom" id="nRk-Yf-m4R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eEm-hR-xJc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcR-cM-q8a">
+                                <rect key="frame" x="137" y="308.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="L0p-yu-mrT"/>
+                                    <constraint firstAttribute="width" constant="100" id="omO-Hs-o29"/>
+                                </constraints>
+                                <state key="normal" title="PRESS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="tZS-JG-0ul" eventType="touchUpInside" id="IZ9-dA-MWy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1Y-uH-DoH">
+                                <rect key="frame" x="164" y="426" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="IFl-Oj-YmT"/>
+                                    <constraint firstAttribute="height" constant="30" id="xN7-qX-xzt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissmis:" destination="tZS-JG-0ul" eventType="touchUpInside" id="fKf-iR-ieW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.71372549019999998" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EcR-cM-q8a" firstAttribute="centerX" secondItem="eEm-hR-xJc" secondAttribute="centerX" id="Myf-qq-E4w"/>
+                            <constraint firstItem="m1Y-uH-DoH" firstAttribute="centerX" secondItem="eEm-hR-xJc" secondAttribute="centerX" id="NNA-P2-SWX"/>
+                            <constraint firstItem="m1Y-uH-DoH" firstAttribute="top" secondItem="EcR-cM-q8a" secondAttribute="bottom" constant="67.5" id="SQM-uB-bm0"/>
+                            <constraint firstItem="EcR-cM-q8a" firstAttribute="centerY" secondItem="eEm-hR-xJc" secondAttribute="centerY" id="zdD-sg-afN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pressBytton" destination="EcR-cM-q8a" id="Lpr-lw-TSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cr-QG-yM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="72"/>
+        </scene>
+    </scenes>
+</document>
